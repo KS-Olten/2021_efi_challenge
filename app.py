@@ -75,3 +75,6 @@ def compete():
     else:
         data = {'message': 'Wrong User', 'score': 0}
         return make_response(jsonify(data), 200)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=5000)
